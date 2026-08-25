@@ -34,6 +34,7 @@
             textBox2 = new TextBox();
             label2 = new Label();
             label3 = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -93,11 +94,26 @@
             label3.TabIndex = 8;
             label3.Text = "Edad";
             // 
+            // button2
+            // 
+            button2.AutoSize = true;
+            button2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button2.BackColor = Color.DeepPink;
+            button2.Font = new Font("Sigmar One", 9.749999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.Location = new Point(12, 286);
+            button2.Name = "button2";
+            button2.Size = new Size(73, 31);
+            button2.TabIndex = 14;
+            button2.Text = "ATRAS";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(textBox2);
@@ -118,5 +134,6 @@
         private TextBox textBox2;
         private Label label2;
         private Label label3;
+        private Button button2;
     }
 }
