@@ -37,6 +37,7 @@
             button2 = new Button();
             button3 = new Button();
             dataGridView1 = new DataGridView();
+            btnSalir = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -129,12 +130,21 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(517, 59);
+            dataGridView1.Location = new Point(443, 9);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(239, 222);
+            dataGridView1.Size = new Size(297, 180);
             dataGridView1.TabIndex = 9;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // btnSalir
+            // 
+            btnSalir.Location = new Point(207, 209);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(75, 23);
+            btnSalir.TabIndex = 10;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -144,6 +154,7 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.Pink;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnSalir);
             Controls.Add(dataGridView1);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -173,5 +184,6 @@
         private Button button2;
         private Button button3;
         private DataGridView dataGridView1;
+        private Button btnSalir;
     }
 }
