@@ -90,5 +90,12 @@ namespace Proyecto_Estudiantes
                 textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells["Edad"].Value.ToString();
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form2 nuevo = new Form2();
+            nuevo.Show();
+            this.Hide();
+        }
     }
 }

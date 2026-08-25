@@ -37,6 +37,7 @@
             button2 = new Button();
             button3 = new Button();
             dataGridView1 = new DataGridView();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -136,6 +137,20 @@
             dataGridView1.TabIndex = 9;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
+            // button4
+            // 
+            button4.AutoSize = true;
+            button4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button4.BackColor = Color.DeepPink;
+            button4.Font = new Font("Sigmar One", 9.749999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.Location = new Point(665, 195);
+            button4.Name = "button4";
+            button4.Size = new Size(102, 31);
+            button4.TabIndex = 10;
+            button4.Text = "SIGUIENTE";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -144,6 +159,7 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.Pink;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
             Controls.Add(dataGridView1);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -173,5 +189,6 @@
         private Button button2;
         private Button button3;
         private DataGridView dataGridView1;
+        private Button button4;
     }
 }

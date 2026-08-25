@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            button4 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -41,11 +43,41 @@
             label1.TabIndex = 0;
             label1.Text = "FORMULARIO DE CAMILA";
             // 
+            // button4
+            // 
+            button4.AutoSize = true;
+            button4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button4.BackColor = Color.DeepPink;
+            button4.Font = new Font("Sigmar One", 9.749999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.Location = new Point(161, 37);
+            button4.Name = "button4";
+            button4.Size = new Size(102, 31);
+            button4.TabIndex = 11;
+            button4.Text = "SIGUIENTE";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
+            // button2
+            // 
+            button2.AutoSize = true;
+            button2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button2.BackColor = Color.DeepPink;
+            button2.Font = new Font("Sigmar One", 9.749999F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.Location = new Point(12, 37);
+            button2.Name = "button2";
+            button2.Size = new Size(73, 31);
+            button2.TabIndex = 13;
+            button2.Text = "ATRAS";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
+            Controls.Add(button4);
             Controls.Add(label1);
             Name = "Form3";
             Text = "Form3";
@@ -56,5 +88,7 @@
         #endregion
 
         private Label label1;
+        private Button button4;
+        private Button button2;
     }
 }
